@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sky">
+    <span class="cloud cloud-one">☁️</span>
+    <span class="cloud cloud-two">☁️</span>
+    <span class="star star-one">✦</span>
+    <span class="star star-two">✧</span>
+  </div>
+
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">☀️ SkyCast</div>
+      <span class="live"><span></span> LIVE WEATHER</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">YOUR PERSONAL WEATHER</p>
+      <h1>Feel the <span>weather.</span></h1>
+      <p class="subtitle">A little sunshine for your day.</p>
+
+      <form id="searchForm" class="search">
+        <span>⌕</span>
+        <input id="cityInput" type="text"
+          placeholder="Search any city..." value="Nellore"
+          aria-label="City name" required>
+        <button type="submit">Search ↗</button>
+      </form>
+
+      <p id="message" class="message">Enter a city to discover its weather.</p>
+    </section>
+
+    <section class="weather-card">
+      <div class="card-heading">
+        <div>
+          <p class="label">CURRENT WEATHER</p>
+          <h2 id="cityName">Nellore, IN</h2>
+          <p id="weatherDescription">Getting weather...</p>
+        </div>
+        <div id="weatherIcon" class="weather-icon">🌤️</div>
+      </div>
+
+      <div class="temperature-row">
+        <div class="temperature">
+          <span id="temperature">--</span><sup>°C</sup>
+        </div>
+        <div class="feels">
+          <span>Feels like</span>
+          <strong id="feelsLike">--°C</strong>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="details">
+        <div class="detail">
+          <div class="detail-icon">💧</div>
+          <div><span>Humidity</span><strong id="humidity">--%</strong></div>
+        </div>
+        <div class="detail">
+          <div class="detail-icon">💨</div>
+          <div><span>Wind speed</span><strong id="wind">-- km/h</strong></div>
+        </div>
+        <div class="detail">
+          <div class="detail-icon">🌡️</div>
+          <div><span>Condition</span><strong id="condition">--</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>Made with ☁️ and a little sunshine</footer>
+  </main>
+</body>
+</html>
